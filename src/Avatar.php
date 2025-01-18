@@ -318,7 +318,7 @@ class Avatar
         $x = $this->width / 2;
         $y = $this->height / 2;
 
-        $manager = new ImageManager(['driver' => $this->driver]);
+        $manager = new ImageManager($this->driver);
         $this->image = $manager->canvas($this->width, $this->height);
 
         $this->createShape();
